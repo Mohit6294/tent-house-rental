@@ -53,7 +53,7 @@ const Login = () => {
           <div>
             <input
               ref={email}
-              className="border  m-4 h-10 w-96 p-3 border-blue-800"
+              className="border  m-4 h-10 w-96 p-3 border-blue-800 rounded-lg"
               type="email"
               placeholder="Enter Your Email"
             />
@@ -61,12 +61,12 @@ const Login = () => {
           <div>
             <input
               ref={password}
-              className="border border-solid m-4 h-10 w-96 p-3 border-blue-800"
+              className="border border-solid m-4 h-10 w-96 p-3 border-blue-800 rounded-lg"
               type="password"
               placeholder="Enter Your Password"
             />
           </div>
-          <button className="bg-blue-700 m-4 h-10 w-96 p-3" onClick={loginHandler}>Log In</button>
+          <button className="bg-red-500 m-4 h-10 w-96 p-2 rounded-lg text-white text-xl font-bold" onClick={loginHandler}>Log In</button>
           <p className="m-2 text-red-400 text-xl font-bold">{errorMessage}</p>
           <p className="m-2 text-red-500 text-xl font-bold">
             New to Tent Rental , Please Sign Up

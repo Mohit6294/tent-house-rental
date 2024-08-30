@@ -53,33 +53,144 @@
       "quantity_booked": 0,
       "price": 900,
       "id": 5
+    },
+    {
+      "product_id": 195,
+      "product_title": "Plastic Chairs",
+      "quantity_total": 10000,
+      "quantity_booked": 0,
+      "price": 10,
+      "id": 6
+    },
+    {
+      "product_id": 190,
+      "product_title": "Tiffany Chairs",
+      "quantity_total": 5000,
+      "quantity_booked": 0,
+      "price": 20,
+      "id": 7
+    },
+    {
+      "product_id": 308,
+      "product_title": "Plastic Round Tables",
+      "quantity_total": 100,
+      "quantity_booked": 0,
+      "price": 500,
+      "id": 8
+    },
+    {
+      "product_id": 697,
+      "product_title": "Steel Folding Table",
+      "quantity_total": 80,
+      "quantity_booked": 0,
+      "price": 900,
+      "id": 9
+    },
+    {
+      "product_id": 840,
+      "product_title": "Bridal Chairs",
+      "quantity_total": 10,
+      "quantity_booked": 0,
+      "price": 100,
+      "id": 10
+    },
+    {
+      "product_id": 291,
+      "product_title": "Plastic Chairs",
+      "quantity_total": 10000,
+      "quantity_booked": 0,
+      "price": 10,
+      "id": 11
+    },
+    {
+      "product_id": 414,
+      "product_title": "Tiffany Chairs",
+      "quantity_total": 5000,
+      "quantity_booked": 0,
+      "price": 20,
+      "id": 12
+    },
+    {
+      "product_id": 805,
+      "product_title": "Plastic Chairs",
+      "quantity_total": 10000,
+      "quantity_booked": 0,
+      "price": 10,
+      "id": 13
+    },
+    {
+      "product_id": 943,
+      "product_title": "Tiffany Chairs",
+      "quantity_total": 5000,
+      "quantity_booked": 0,
+      "price": 20,
+      "id": 14
+    },
+    {
+      "product_id": 803,
+      "product_title": "Bridal Chairs",
+      "quantity_total": 10,
+      "quantity_booked": 0,
+      "price": 100,
+      "id": 15
+    },
+    {
+      "product_id": 213,
+      "product_title": "Plastic Round Tables",
+      "quantity_total": 100,
+      "quantity_booked": 0,
+      "price": 500,
+      "id": 16
+    },
+    {
+      "product_id": 709,
+      "product_title": "Steel Folding Table",
+      "quantity_total": 80,
+      "quantity_booked": 0,
+      "price": 900,
+      "id": 17
     }
   ],
   "customers": [
     {
-      "customer_id": 78,
+      "customer_id": 371,
       "customer_name": "Aman Kumar",
-      "id": 1
-    },
-    {
-      "customer_id": 512,
-      "customer_name": "Mohit Kumar",
-      "id": 2
+      "id": 14
     },
     {
       "customer_id": 5,
       "customer_name": "Rohan Kumar",
-      "id": 3
-    },
-    {
-      "customer_id": 3,
-      "customer_name": "Raman Kumar",
-      "id": 4
+      "id": 15
     },
     {
       "customer_id": 4,
       "customer_name": "Naman Kumar",
-      "id": 5
+      "id": 16
+    },
+    {
+      "customer_id": 705,
+      "customer_name": "Mohit Kumar",
+      "id": 17
+    },
+    {
+      "customer_id": 767,
+      "customer_name": "Aman Kumar",
+      "id": 18
+    },
+    {
+      "customer_id": 3,
+      "customer_name": "Raman Kumar",
+      "id": 19
+    },
+    {
+      "customer_id": 4,
+      "customer_name": "Naman Kumar",
+      "id": 20
+    },
+    {
+      "customer_id": 5,
+      "customer_name": "Rohan Kumar",
+      "id": 21
     }
   ]
 }

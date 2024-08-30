@@ -24,7 +24,7 @@ const Initialize = () => {
     <div className="text-center">
       <button
         onClick={initializeProductsAndCustomer}
-        className="border border-red-600 border-solid m-32 p-4 bg-slate-400 text-white"
+        className="border border-red-600 border-solid m-32 p-4 bg-slate-400 text-white rounded-lg"
       >
         Initialize the Data
       </button>
