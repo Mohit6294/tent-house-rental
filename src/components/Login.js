@@ -1,9 +1,10 @@
 import React, { useRef, useState } from "react";
 import logo from "../images/ten-house.jpg";
 import { useNavigate } from "react-router-dom";
-import  { validate } from "../customHooks/validate";
+
 import { useDispatch, useSelector } from "react-redux";
 import { addUserDetails } from "../utility/userSlice";
+import { validate } from "../customHooks/validate";
 
 
 const Login = () => {
