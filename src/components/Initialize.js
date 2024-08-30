@@ -1,33 +1,13 @@
 import React, { useState } from "react";
 import { CUSTOMER_DATA, DEFAULT_URL, PRODUCT_DATA } from "../utility/constants";
 import { DeleteTransactionsData } from "../utility/DeleteTransactionsData";
+import { saveData } from "../utility/saveData";
 
 const Initialize = () => {
   const [successMessage, setSuccessMessage] = useState(null);
   const [errorMessage, setErrorMessage] = useState(null);
 
-  const saveData = async (data, apiEndpoint) => {
-    const fetchPromises = data.map((item) =>
-      fetch(DEFAULT_URL + apiEndpoint, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(item),
-      })
-    );
-
-    try {
-      const responses = await Promise.all(fetchPromises);
-      const results = await Promise.all(
-        responses.map((response) => response.json())
-      );
-      console.log("Saved:", results);
-    } catch (error) {
-      console.error("Error:", error);
-    }
-  };
-
+  
 
   const initializeProductsAndCustomer = () => {
     try {
