@@ -7,6 +7,7 @@ import Product from './Product'
 import Customer from './Customer'
 import Transactions from './Transactions'
 import Reports from './Reports'
+import TransactionForm from './TransactionForm'
 
 const appRouter = createBrowserRouter([
   {
@@ -32,7 +33,13 @@ const appRouter = createBrowserRouter([
       },
       {
         path:"transactions",
-        element:<Transactions />
+        element:<Transactions />,
+        children:[
+          {
+            path:"inOutTransaction",
+            element:<TransactionForm />
+          }
+        ]
       },
       {
         path:"reports",

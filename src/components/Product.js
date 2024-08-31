@@ -22,6 +22,7 @@ const Product = () => {
       <table className="border-separate border border-black border-spacing-1 w-auto">
         <thead className="">
           <tr>
+          <th className="border border-black text-xl p-2">Product ID</th>
             <th className="border border-black text-xl p-2">Product Title</th>
             <th className="border border-black text-xl p-2">Total Quantity</th>
             <th className="border border-black text-xl p-2">Quantity Booked</th>
@@ -32,6 +33,7 @@ const Product = () => {
           {productData &&
             productData.map((entity) => (
               <tr>
+                <td className="border border-black text-xl p-2">{entity?.id}</td>
                 <td className="border border-black text-xl p-2">{entity?.product_title}</td>
                 <td className="border border-black text-xl p-2">{entity?.quantity_total}</td>
                 <td className="border border-black text-xl p-2">{entity?.quantity_booked}</td>

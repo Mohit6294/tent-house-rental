@@ -32,7 +32,7 @@ const Customer = () => {
           {customerData &&
             customerData.map((entity) => (
               <tr>
-                <td className="border border-black text-xl p-2">{entity?.customer_id}</td>
+                <td className="border border-black text-xl p-2">{entity?.id}</td>
                 <td className="border border-black text-xl p-2">{entity?.customer_name}</td>
               </tr>
             ))}
