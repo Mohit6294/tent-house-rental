@@ -42,7 +42,7 @@ const Login = () => {
   
 
   return (
-    <div className="bg-white  m-12 p-2 h-[500px] flex justify-center border border-blue-800">
+     <div className="bg-white  m-12 p-2 h-[500px] flex justify-center border border-blue-800">
       <div className="bg-blue-200">
         <h1 className="font-bold text-red-600 text-2xl m-10">
           Welcome to Tent House Rental Application
