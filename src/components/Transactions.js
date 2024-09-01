@@ -18,6 +18,7 @@ const Transactions = () => {
   const getTransactionData = async(url,entity) =>{
       const data = await fetch(url+entity);
       const json = await data.json();
+      json.sort((a, b) => a.transaction_date_time.localeCompare(b.customer_date_time));
       dispatch(addTransactionDetails(json));
   }
 

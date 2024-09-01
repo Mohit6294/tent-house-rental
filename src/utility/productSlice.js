@@ -8,7 +8,7 @@ const productSlice = createSlice({
   reducers:{
     addProductsDetails: (state,action)=>{
       state.productDetails = action.payload;
-    }
+    },
   }
 });
 

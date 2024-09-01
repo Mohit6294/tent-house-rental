@@ -10,6 +10,7 @@ const Product = () => {
   const getProductDetails = async (url, entity) => {
     const data = await fetch(url + entity);
     const json = await data.json();
+    json.sort((a, b) => a.product_title.localeCompare(b.product_title));
     dispatch(addProductsDetails(json));
   };
 

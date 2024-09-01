@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { updateProductDetail } from "./productSlice";
 
 const transactionSlice = createSlice({
   name:'transaction',
@@ -8,7 +9,8 @@ const transactionSlice = createSlice({
   reducers:{
     addTransactionDetails: (state,action)=>{
       state.transactionData = action.payload;
-    }
+    },
+    
   }
 });
 

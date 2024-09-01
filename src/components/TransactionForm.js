@@ -1,7 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react'
 import InputComponent from './InputComponent'
 import { DEFAULT_URL, INITALIZE_CUSTOMER_OPTION } from '../utility/constants'
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { addProductsDetails, updateProductDetail } from '../utility/productSlice';
 
 const TransactionForm = () => {
    const customerData = useSelector((store)=>store.customer.customerDetails);
@@ -11,6 +12,7 @@ const TransactionForm = () => {
    const [customerId,setCustomerId] = useState(customerData[0].id);
    const [quantity,setQuantity] = useState(0);
    const [transactionType,setTransactionType] = useState('IN');
+   const dispatch = useDispatch();
 
 
     
@@ -35,6 +37,28 @@ const TransactionForm = () => {
     
   }
 
+  const updateProductDetails =  async (totalQuantity,quantityBooked) =>{
+    const productData = await fetch(DEFAULT_URL+"products/"+productId);
+    const jsonProductData = await productData.json();
+
+    const OPTIONS = {
+      method: 'PUT',
+      headers:{
+        'Content-Type':  'application/json',
+      },
+      body:JSON.stringify({
+          quantity_total: totalQuantity,
+          quantity_booked:quantityBooked,
+          product_title:jsonProductData?.product_title,
+          price:jsonProductData?.price,
+      }),
+    }
+    const data = await fetch(DEFAULT_URL+"products/"+productId,OPTIONS);
+    const json = await data.json();
+    console.log(json);
+    
+  }
+
   const saveTransactionHanlder = async () =>{
     try{
         const data = await fetch(DEFAULT_URL+"products/"+productId);
@@ -43,8 +67,11 @@ const TransactionForm = () => {
         console.log(availableQuantity,'  ',quantity);
         if(availableQuantity >= quantity && transactionType == "OUT"){
             saveTransactionPossible(json?.quantity_total-quantity,json?.quantity_booked + quantity);
+          
+            updateProductDetails(json?.quantity_total-quantity,json?.quantity_booked + quantity);
         }else if(transactionType == 'IN'){
           saveTransactionPossible(json?.quantity_total+quantity,json?.quantity_booked - quantity);
+          updateProductDetails(json?.quantity_total+quantity,json?.quantity_booked-quantity);
         }
         setMessage("Successfully Completed The transaction");
         
@@ -79,7 +106,7 @@ const TransactionForm = () => {
       </div>
       <div>
         <label>Select Quantity</label>
-        <input defaultValue={'0'} value={quantity} onChange={(e)=>setQuantity(e.target?.value)} type="number" placeholderText="Enter Quantity" className="p-2  ml-10 bg-white text-xl font-bold " /> 
+        <input defaultValue={0} value={quantity} onChange={(e)=>setQuantity(parseInt(e.target?.value))} type="number" placeholderText="Enter Quantity" className="p-2  ml-10 bg-white text-xl font-bold " /> 
       </div>
       <div>
         <p className=''>{message}</p>

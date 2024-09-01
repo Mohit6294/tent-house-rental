@@ -20,6 +20,7 @@ const Login = () => {
     const validateUser =  async (email) =>{
       const data = await fetch("http://localhost:8000/users/"+email);
       const json = await data.json();
+      localStorage.setItem('user',json);
       dispatch(addUserDetails(json));
     }
 

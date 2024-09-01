@@ -11,6 +11,7 @@ const Customer = () => {
   const getCustomerDetails = async (url,entity)=>{
     const data = await fetch(url+entity);
     const json = await data.json();
+    json.sort((a, b) => a.customer_name.localeCompare(b.customer_name));
     dispatch(addCustomerDetails(json));
   }
 

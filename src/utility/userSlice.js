@@ -9,7 +9,7 @@ const userSlice = createSlice({
   reducers:{
     addUserDetails:(state,action)=>{
       state.user = action.payload;
-    }
+    },
   }
 });
 
