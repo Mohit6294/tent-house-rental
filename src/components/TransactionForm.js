@@ -64,16 +64,19 @@ const TransactionForm = () => {
         const data = await fetch(DEFAULT_URL+"products/"+productId);
         const json = await data.json();
         const availableQuantity = json?.quantity_total - json?.quantity_booked;
-        console.log(availableQuantity,'  ',quantity);
-        if(availableQuantity >= quantity && transactionType == "OUT"){
+        if(availableQuantity >= quantity && transactionType == "OUT" && quantity>0){
             saveTransactionPossible(json?.quantity_total-quantity,json?.quantity_booked + quantity);
           
             updateProductDetails(json?.quantity_total-quantity,json?.quantity_booked + quantity);
-        }else if(transactionType == 'IN'){
+            setMessage("Successfully Completed The transaction");
+        }else if(transactionType == 'IN' && json?.quantity_total >= quantity && quantity >0 ){
           saveTransactionPossible(json?.quantity_total+quantity,json?.quantity_booked - quantity);
           updateProductDetails(json?.quantity_total+quantity,json?.quantity_booked-quantity);
+          setMessage("Successfully Completed The transaction");
+        }else{
+          setMessage("Please Enter Valid Details");
         }
-        setMessage("Successfully Completed The transaction");
+       
         
     }catch(error){
         setMessage(error);

@@ -15,70 +15,105 @@
   ],
   "products": [
     {
-      "quantity_total": 9960,
-      "quantity_booked": 40,
-      "product_title": "Plastic Chairs",
-      "price": 10,
-      "id": "274a"
-    },
-    {
-      "id": "7fd2",
+      "id": "5d5e",
       "product_title": "Tiffany Chairs",
       "quantity_total": 5000,
       "quantity_booked": 0,
       "price": 20
     },
     {
-      "id": "253b",
+      "quantity_total": 0,
+      "quantity_booked": 10,
       "product_title": "Bridal Chairs",
-      "quantity_total": 10,
-      "quantity_booked": 0,
-      "price": 100
+      "price": 100,
+      "id": "e1d5"
     },
     {
-      "id": "e69d",
-      "product_title": "Plastic Round Tables",
-      "quantity_total": 100,
-      "quantity_booked": 0,
-      "price": 500
-    },
-    {
-      "id": "3306",
-      "product_title": "Steel Folding Table",
-      "quantity_total": 80,
-      "quantity_booked": 0,
-      "price": 900
-    },
-    {
-      "id": "02fd",
+      "id": "a449",
       "product_title": "Plastic Chairs",
       "quantity_total": 10000,
       "quantity_booked": 0,
       "price": 10
     },
     {
-      "id": "82e6",
-      "product_title": "Tiffany Chairs",
-      "quantity_total": 5000,
-      "quantity_booked": 0,
-      "price": 20
-    },
-    {
-      "id": "17c9",
-      "product_title": "Bridal Chairs",
-      "quantity_total": 10,
-      "quantity_booked": 0,
-      "price": 100
-    },
-    {
-      "id": "e996",
+      "id": "21cc",
       "product_title": "Plastic Round Tables",
       "quantity_total": 100,
       "quantity_booked": 0,
       "price": 500
     },
     {
-      "id": "a2bf",
+      "id": "b73d",
+      "product_title": "Steel Folding Table",
+      "quantity_total": 80,
+      "quantity_booked": 0,
+      "price": 900
+    },
+    {
+      "id": "792c",
+      "product_title": "Tiffany Chairs",
+      "quantity_total": 5000,
+      "quantity_booked": 0,
+      "price": 20
+    },
+    {
+      "id": "3f44",
+      "product_title": "Plastic Chairs",
+      "quantity_total": 10000,
+      "quantity_booked": 0,
+      "price": 10
+    },
+    {
+      "quantity_total": 30,
+      "quantity_booked": -20,
+      "product_title": "Bridal Chairs",
+      "price": 100,
+      "id": "0d56"
+    },
+    {
+      "id": "487f",
+      "product_title": "Plastic Round Tables",
+      "quantity_total": 100,
+      "quantity_booked": 0,
+      "price": 500
+    },
+    {
+      "id": "281e",
+      "product_title": "Steel Folding Table",
+      "quantity_total": 80,
+      "quantity_booked": 0,
+      "price": 900
+    },
+    {
+      "id": "ed3a",
+      "product_title": "Plastic Chairs",
+      "quantity_total": 10000,
+      "quantity_booked": 0,
+      "price": 10
+    },
+    {
+      "id": "2d38",
+      "product_title": "Tiffany Chairs",
+      "quantity_total": 5000,
+      "quantity_booked": 0,
+      "price": 20
+    },
+    {
+      "id": "0e4e",
+      "product_title": "Bridal Chairs",
+      "quantity_total": 10,
+      "quantity_booked": 0,
+      "price": 100
+    },
+    {
+      "id": "89a3",
+      "product_title": "Plastic Round Tables",
+      "quantity_total": 100,
+      "quantity_booked": 0,
+      "price": 500
+    },
+    {
+      "id": "448f",
       "product_title": "Steel Folding Table",
       "quantity_total": 80,
       "quantity_booked": 0,
@@ -87,53 +122,97 @@
   ],
   "customers": [
     {
-      "id": "79a8",
+      "id": "0644",
       "customer_name": "Mohit Kumar"
     },
     {
-      "id": "d061",
+      "id": "0fbd",
       "customer_name": "Aman Kumar"
     },
     {
-      "id": "c762",
-      "customer_name": "Rohan Kumar"
-    },
-    {
-      "id": "d81c",
+      "id": "c694",
       "customer_name": "Raman Kumar"
     },
     {
-      "id": "f77a",
+      "id": "d88d",
       "customer_name": "Naman Kumar"
     },
     {
-      "id": "c01b",
+      "id": "f076",
+      "customer_name": "Rohan Kumar"
+    },
+    {
+      "id": "9ba0",
       "customer_name": "Mohit Kumar"
+    },
+    {
+      "id": "6289",
+      "customer_name": "Aman Kumar"
+    },
+    {
+      "id": "0c42",
+      "customer_name": "Raman Kumar"
+    },
+    {
+      "id": "a643",
+      "customer_name": "Naman Kumar"
+    },
+    {
+      "id": "e3cc",
+      "customer_name": "Rohan Kumar"
+    },
+    {
+      "id": "b702",
+      "customer_name": "Mohit Kumar"
+    },
+    {
+      "id": "e06a",
+      "customer_name": "Aman Kumar"
+    },
+    {
+      "id": "7483",
+      "customer_name": "Raman Kumar"
+    },
+    {
+      "id": "275a",
+      "customer_name": "Naman Kumar"
+    },
+    {
+      "id": "3bfa",
+      "customer_name": "Rohan Kumar"
     }
   ],
   "transactions": [
     {
-      "id": "adec",
-      "transaction_date_time": "8/31/2024, 7:04:43 PM",
-      "customer_id": "79a8",
-      "transaction_type": "OUT",
-      "product_id": "274a",
+      "id": "f73b",
+      "transaction_date_time": "9/1/2024, 11:58:57 AM",
+      "customer_id": "0644",
+      "transaction_type": "IN",
+      "product_id": "0d56",
       "quantity": 10
     },
     {
-      "id": "53d2",
-      "transaction_date_time": "8/31/2024, 7:30:37 PM",
-      "customer_id": "c762",
-      "transaction_type": "OUT",
-      "product_id": "274a",
+      "id": "7002",
+      "transaction_date_time": "9/1/2024, 11:59:33 AM",
+      "customer_id": "0644",
+      "transaction_type": "IN",
+      "product_id": "0d56",
       "quantity": 10
     },
     {
-      "id": "fece",
-      "transaction_date_time": "8/31/2024, 7:32:04 PM",
-      "customer_id": "79a8",
+      "id": "ae7e",
+      "transaction_date_time": "9/1/2024, 12:00:40 PM",
+      "customer_id": "0fbd",
+      "transaction_type": "IN",
+      "product_id": "e1d5",
+      "quantity": 0
+    },
+    {
+      "id": "a7b6",
+      "transaction_date_time": "9/1/2024, 12:02:54 PM",
+      "customer_id": "0fbd",
       "transaction_type": "OUT",
-      "product_id": "274a",
+      "product_id": "e1d5",
       "quantity": 10
     }
   ]
